@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  /* background: #6843d1; */
+  /* background: #222222; */
+  background-color: black;
+}
+
+.container {
+  position: fixed;
+  top: 161px;
+  left: 10px;
+  width: 75px;
+  min-height: 400px;
+  height: max-content;
+  background-color: white;
+  border-radius: 20px !important;
+  z-index: 100;
+  /* background-color: black; */
+}
+
+ul .icon {
+  display: flex;
+  justify-content: flex-start;
+  padding: 25px;
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+  font-size: 25px;
+  color: #6843d1;
+  text-decoration: none;
+}
+/* ul:hover {
+  background-color: #f8efba;
+  border-radius: 20px !important;
+  z-index: 0;
+} */
+.icon_name {
+  position: relative;
+  display: flex;
+  float: right;
+  top: -46px;
+  left: 80px;
+  list-style: none;
+  /* display: none; */
+  background: white;
+}
+
+.home {
+  position: absolute;
+  top: -34px;
+  left: -100px;
+  width: 150px;
+  height: 81.5px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  border-top-right-radius: 20px;
+}
+
+.portfolio {
+  position: absolute;
+  top: -34px;
+  left: -100px;
+  width: 150px;
+  height: 83px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  /* border-radius: 12px; */
+}
+
+.about {
+  position: absolute;
+  top: -34px;
+  left: -100px;
+  width: 150px;
+  height: 83px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  /* border-radius: 12px; */
+}
+
+.certifications {
+  position: absolute;
+  top: -34px;
+  left: -100px;
+  width: 150px;
+  height: 82px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  /* border-radius: 12px; */
+}
+
+.contact {
+  position: absolute;
+  top: -32.5px;
+  left: -100px;
+  width: 150px;
+  height: 78.5px;
+  margin: auto;
+  background: white;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+}
+
+.text {
+  position: relative;
+  top: 26px;
+  color: #318fc7;
+  text-decoration-line: none !important;
+}
+.name {
+  text-decoration-line: none !important;
+  /* color: #cc00ff; */
+  color: #318fc7;
+}
+.toggle {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  padding: 20px;
+  /* color: white; */
+}
+.toggle_size {
+  font-size: 50px;
+  color: white !important;
+}
+.lighteffects {
+  /* color: #9d00ff; */
+  /* color: #00ffff; */
+  /* color: #cc00ff; */
+  color: #4a9ccd;
+}
+.bc {
+  width: max-content;
+}
+@media screen and (max-width: 950px) {
+  .container {
+    position: fixed;
+    top: 0;
+    min-height: 20px;
+    left: 1;
+    width: 20px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    margin-left: 13px;
+    z-index: 100;
+  }
+  .icon_name {
+    display: none;
+  }
+  ul.icons {
+    position: absolute;
+    left: 0;
+    top: 2;
+  }
+  .home {
+    position: absolute;
+    top: -34px;
+    left: -100px;
+    width: 150px;
+    height: 81.5px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    border-top-right-radius: 20px;
+  }
+
+  .portfolio {
+    position: absolute;
+    top: -34px;
+    left: -100px;
+    width: 150px;
+    height: 83px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    /* border-radius: 12px; */
+  }
+
+  .about {
+    position: absolute;
+    top: -34px;
+    left: -100px;
+    width: 150px;
+    height: 83px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    /* border-radius: 12px; */
+  }
+
+  .certifications {
+    position: absolute;
+    top: -34px;
+    left: -100px;
+    width: 150px;
+    height: 82px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    /* border-radius: 12px; */
+  }
+
+  .contact {
+    position: absolute;
+    top: -32.5px;
+    left: -100px;
+    width: 150px;
+    height: 78.5px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    border-bottom-right-radius: 20px;
+  }
+  .kartik {
+    display: block;
+  }
+  .tejas {
+    display: none;
+  }
+}
