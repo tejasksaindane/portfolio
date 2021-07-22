@@ -5,15 +5,32 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import EmailIcon from "@material-ui/icons/Email";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="Con_container">
+    <motion.div
+      className="Con_container"
+      initial={{ x: "-100vw" }}
+      animate={{ x: 0 }}
+      transition={{ delay: 0.5 }}
+    >
       <div className="subContainer">
         <div className="title">
           <h1>Contact</h1>
         </div>
-        <div className="github">
+
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{
+            delay: 0.8,
+            type: "spring",
+            duration: 5,
+            stiffness: 120,
+          }}
+          className="github"
+        >
           <a
             className="contact_links"
             href=" https://github.com/tejasksaindane"
@@ -23,9 +40,19 @@ const Contact = () => {
             </span>
             <span>Github</span>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="LinkedIn">
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{
+            delay: 1.2,
+            type: "spring",
+            duration: 5,
+            stiffness: 120,
+          }}
+          className="LinkedIn"
+        >
           <a
             className="contact_links"
             href="https://www.linkedin.com/in/tejas-saindane-7a37351b9/"
@@ -35,9 +62,19 @@ const Contact = () => {
             </span>
             <span>LinkedIn</span>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="facebook">
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{
+            delay: 1.6,
+            type: "spring",
+            duration: 5,
+            stiffness: 120,
+          }}
+          className="facebook"
+        >
           <a
             className="contact_links"
             href="https://www.facebook.com/tejas.saindane.142"
@@ -47,9 +84,14 @@ const Contact = () => {
             </span>
             <span>Facebook</span>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="instagram">
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 0 }}
+          transition={{ delay: 2, type: "spring", duration: 5, stiffness: 120 }}
+          className="instagram"
+        >
           <a
             className="contact_links"
             href="https://www.instagram.com/_saindane.tejas_/"
@@ -59,18 +101,28 @@ const Contact = () => {
             </span>
             <span>Instagram</span>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="email">
+        <motion.div
+          initial={{ x: "-100vw" }}
+          animate={{ x: 5 }}
+          transition={{
+            delay: 1,
+            duration: 5,
+            type: "spring",
+            stiffness: 120,
+          }}
+          className="email"
+        >
           <a className="contact_links" href="#">
             <span className="github_icon">
               <EmailIcon className="con_icon" />
             </span>
             <span>Email</span>
           </a>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,16 +5,31 @@ import db from "../firebase";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 import Button from "@material-ui/core/Button";
 import "../Styles/Portfolio.css";
+import { Preloader, TailSpin } from "react-preloader-icon";
+import Loader from "./Loader";
 
 const Certifications = () => {
   const [res, setRes] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  const Loader = () => (
+    <Preloader
+      use={TailSpin}
+      size={40}
+      strokeWidth={10}
+      strokeColor="#3498db"
+      duration={2000}
+    />
+  );
+
   useEffect(() => {
-    db.collection("Projects").onSnapshot(snapshot => {
+    db.collection("Projects").onSnapshot((snapshot) => {
       // console.log(
       //   ">>>>>>>>>>>>>..",
       //   snapshot.docs.map(doc => doc.data())
       const tempArray = [];
-      snapshot.docs.map(doc => tempArray.push(doc.data()));
+      setLoading(true);
+      snapshot.docs.map((doc) => tempArray.push(doc.data()));
       setRes(tempArray);
 
       // console.log(Result[1].git);
@@ -22,22 +37,28 @@ const Certifications = () => {
   }, []);
 
   return (
-    <div className="wrapper">
-      {res.map(data => (
-        <div className="card">
-          <img src={data?.image} alt="" />
-          <div className="info">
-            <h1>{data?.name}</h1>
-            <a className="anc" href={data?.git}>
-              GITHUB
-            </a>
-            <a className="anc" href={data?.url}>
-              VISIT
-            </a>
-          </div>
+    <>
+      {loading ? (
+        <div className="wrapper">
+          {res.map((data) => (
+            <div className="card">
+              <img src={data?.image} alt="" />
+              <div className="info">
+                <h1>{data?.name}</h1>
+                <a className="anc" href={data?.git}>
+                  GITHUB
+                </a>
+                <a className="anc" href={data?.url}>
+                  VISIT
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      ) : (
+        Loader()
+      )}
+    </>
   );
 };
 

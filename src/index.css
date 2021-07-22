@@ -1,12 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
 body {
   margin: 0;
-  font-family: "Roboto";
-
+  /* font-family: "Roboto"; */
+  font-family: "Prompt", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+  font-family: "Prompt", sans-serif;
 }
