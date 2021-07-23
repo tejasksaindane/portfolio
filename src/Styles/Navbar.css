@@ -155,7 +155,7 @@ ul .icon {
     background: black;
     display: flex;
     flex-direction: row;
-    margin-left: 13px;
+    margin-left: 10px;
     z-index: 100;
   }
   .icon_name {
