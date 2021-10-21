@@ -119,8 +119,64 @@
   margin-top: -6px; */
 }
 .contact_links {
-  text-decoration: none;
-  color: #4a9ccd;
+  text-decoration: none !important;
+}
+.github_icon,
+#facebook_icon,
+#twitterIcon,
+#linkedinIcon,
+#instagram_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#twitterIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 45px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.con_icon {
+  font-size: 25px !important;
+  margin-left: 20px;
+  color: #fff;
+}
+.contact_links > span:nth-child(2) {
+  color: #fff !important;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.social-links a:nth-child(1),
+.github > a > span:nth-child(1) {
+  background: linear-gradient(0deg, #000000, #252525);
+
+  box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.social-links a:nth-child(2),
+#twitterIcon {
+  background: linear-gradient(0deg, #0e9cf5, #41d6ff);
+}
+.social-links a:nth-child(3),
+#linkedinIcon {
+  background: linear-gradient(0deg, #3c5a99, #577ac7);
+}
+.social-links a:nth-child(4),
+#instagram_icon {
+  background: linear-gradient(45deg, #405de6, #833ab4, #fd1d1d);
+}
+.social-links a:nth-child(5),
+#facebook_icon {
+  background: linear-gradient(0deg, #006192, #019deb);
 }
 @media screen and (max-width: 950px) {
   .Con_container {
