@@ -7,10 +7,10 @@ const About = () => {
     <div className="abt_container">
       <center>
         <motion.h1
-          initial={{ x: "-100vw" }}
+          initial={{ x: "-30vw" }}
           animate={{ x: 0 }}
           transition={{
-            delay: 1,
+            delay: 0.2,
             type: "spring",
             stiffness: 100,
             duration: 5,
@@ -27,10 +27,10 @@ const About = () => {
           </p>
           <motion.h3
             className="abt_linetwo"
-            initial={{ x: "100vw" }}
+            initial={{ x: "30vw" }}
             animate={{ x: 0 }}
             transition={{
-              delay: 0.5,
+              delay: 0.2,
               type: "spring",
               duration: 5,
               stiffness: 100,
