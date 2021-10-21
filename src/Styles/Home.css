@@ -13,7 +13,6 @@
   flex-wrap: wrap;
   display: grid;
   place-items: center;
-  background: red;
 }
 .home__introduction {
   color: white;
