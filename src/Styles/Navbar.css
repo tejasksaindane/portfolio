@@ -37,6 +37,7 @@ ul .icon {
   font-size: 25px;
   color: #6843d1;
   text-decoration: none;
+  transition: 1s;
 }
 /* ul:hover {
   background-color: #f8efba;
@@ -144,6 +145,7 @@ ul .icon {
 }
 .bc {
   width: max-content;
+  transition: 2s;
 }
 @media screen and (max-width: 950px) {
   .container {
