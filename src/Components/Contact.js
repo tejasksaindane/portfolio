@@ -31,6 +31,7 @@ const Contact = () => {
           }}
           className="github"
         >
+        
           <a
             className="contact_links"
             href=" https://github.com/tejasksaindane"
@@ -58,7 +59,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/tejas-saindane-7a37351b9/"
           >
             <span className="github_icon">
-              <LinkedInIcon className="con_icon" />
+              <LinkedInIcon className="con_icon" id='linkedinIcon'/>
             </span>
             <span>LinkedIn</span>
           </a>
@@ -80,7 +81,7 @@ const Contact = () => {
             href="https://www.facebook.com/tejas.saindane.142"
           >
             <span className="github_icon">
-              <FacebookIcon className="con_icon" />
+              <FacebookIcon className="con_icon" id='facebook_icon'/>
             </span>
             <span>Facebook</span>
           </a>
@@ -97,7 +98,7 @@ const Contact = () => {
             href="https://www.instagram.com/_saindane.tejas_/"
           >
             <span className="github_icon">
-              <InstagramIcon className="con_icon" />
+              <InstagramIcon className="con_icon" id='instagram_icon'/>
             </span>
             <span>Instagram</span>
           </a>
@@ -116,7 +117,7 @@ const Contact = () => {
         >
           <a className="contact_links" href="#">
             <span className="github_icon">
-              <EmailIcon className="con_icon" />
+              <i className='bx bxl-twitter con_icon ' id='twitterIcon'></i>
             </span>
             <span>Email</span>
           </a>
